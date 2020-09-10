@@ -1,0 +1,54 @@
+body {
+    font-family: fantasy;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    user-select: none;
+    margin: 0px auto;
+}
+
+.changeAnimation {
+    animation: wide-scale;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    text-align: center;
+    color:red;
+}
+
+@keyframes wide-scale {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 900%;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        color: black;
+    }
+    100% {
+        opacity: 1;
+        color: red;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
